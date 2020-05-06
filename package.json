@@ -16,6 +16,7 @@
     "packages/*"
   ],
   "scripts": {
+    "lerna:publish": "yarn lerna publish",
     "format": "prettier --write \"**/*.{ts,js,json,md}\"",
     "format:check": "prettier --debug-check \"**/*.{ts,js,json,md}\""
   },
