@@ -1,23 +1,38 @@
 {
-  "name": "cra-template-empty",
+  "name": "cra-minimal-templates",
+  "description": "A collection of minimal templates for Create React App",
   "version": "1.0.0",
-  "keywords": [
-    "react",
-    "create-react-app",
-    "template"
-  ],
-  "description": "An empty template for Create React App.",
-  "main": "template.json",
+  "author": "Ian Sutherland",
+  "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/iansu/cra-template-empty.git"
+    "url": "https://github.com/iansu/cra-minimal-templates"
   },
-  "license": "MIT",
   "engines": {
-    "node": ">=8"
+    "node": ">=10.0.0"
   },
-  "files": [
-    "template",
-    "template.json"
-  ]
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "format:check": "prettier --debug-check \"**/*.{ts,js,json,md}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,html,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lerna": "^3.20.2",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
+  }
 }

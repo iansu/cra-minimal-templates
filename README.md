@@ -1,3 +1,17 @@
-# cra-template-empty
+# CRA Minimal Templates
 
-An empty template for [Create React App](https://github.com/facebook/create-react-app).
+A collection of minimal templates for Create React App
+
+## Templates
+
+- `cra-template-minimal` - A minimal JavaScript template
+- `cra-template-empty` - A (nearly) empty JavaScript template
+
+## Usage
+
+To use one of these templates add `--template <name>` when creating a new app:
+
+```sh
+// create a new app with cra-template-minimal
+npx create-react-app my-app --template minimal
+```
