@@ -1,6 +1,6 @@
 # CRA Minimal Templates
 
-A collection of minimal templates for Create React App
+A collection of minimal templates for [Create React App](https://create-react-app.dev/)
 
 ## Templates
 
